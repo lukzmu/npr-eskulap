@@ -1,0 +1,17 @@
+x-base: &base
+  image: npr_eskulap
+  env_file: .env
+  volumes:
+    - .:/app
+  labels:
+    me.zmudzinski: npr-eskulap
+
+services:
+  web:
+    <<: *base
+    build:
+      context: .
+      dockerfile: ./compose/Dockerfile
+    command: runserver
+    ports:
+      - "8000:8000"
