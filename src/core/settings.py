@@ -26,4 +26,4 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # --- Site Data ---
-SITE_DATA = {}
+SITE_DATA: dict[str, dict] = {}
