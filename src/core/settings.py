@@ -1,9 +1,11 @@
 import os
 
+from core.repositories import Repository
+
 # --- Site Data ---
 SITEURL = os.getenv("SITEURL", default="https://eskulapbiskupiec.pl")
 AUTHOR = "Lukasz Zmudzinski"
-SITENAME = "Niepubliczna Przychodnia Rodzinna w Biskupcu"
+SITENAME = "Niepubliczna Przychodnia Rodzinna Eskulap w Biskupcu"
 TIMEZONE = "Europe/Warsaw"
 DEFAULT_LANG = "pl"
 
@@ -26,4 +28,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # --- Site Data ---
-SITE_DATA: dict[str, dict] = {}
+SITE_DATA: dict[str, dict] = {
+    "contact": Repository.load_data(data_path="data/contact.yml"),
+    "home": Repository.load_data(data_path="data/home.yml"),
+}

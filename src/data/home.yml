@@ -1,0 +1,25 @@
+title: Eskulap
+subtitle: Niepubliczna Przychodnia Rodzinna
+description: Jakiś fajny tekst o tym jaka przychodnia jest fajna i jak duzo rzeczy oferuje swoim pacjentom. Krótkie podsumowanie, nic fancy.
+highlights:
+  - label: Zadowolonych pacjentów
+    value: 10000+
+  - label: Personel medyczny na pokładzie
+    value: 30+
+  - label: Ilość specjalistycznego sprzętu
+    value: 20+
+  - label: Lata istnienia przychodni
+    value: 32
+specializations:
+  - label: Choroby Dzieci
+    icon:
+  - label: Medycyna Rodzinna
+    icon:
+  - label: Ortopedia
+    icon:
+  - label: Choroby Wewnętrzne
+    icon:
+  - label: Neurologia
+    icon:
+  - label: Cokolwiek
+    icon:
