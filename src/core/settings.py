@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 
 from core.repositories import Repository
 
@@ -28,7 +29,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # --- Site Data ---
-SITE_DATA: dict[str, dict] = {
+SITE_DATA: dict[str, dict | int] = {
+    "year": datetime.now().year,
     "contact": Repository.load_data(data_path="data/contact.yml"),
     "home": Repository.load_data(data_path="data/home.yml"),
 }
