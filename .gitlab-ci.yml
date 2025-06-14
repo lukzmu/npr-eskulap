@@ -29,7 +29,7 @@ before_script:
     - apt-get install -y --no-install-recommends curl
     - curl -Os https://cli.codecov.io/latest/linux/codecov
     - chmod +x codecov
-    - ./codecov upload-process -t $CODECOV_TOKEN --service gitlab
+    - ./codecov upload-process -t $CODECOV_TOKEN --env CI_SERVICE=gitlab
 
 🚀 pages:
   stage: build
