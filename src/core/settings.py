@@ -11,8 +11,8 @@ DEFAULT_LANG = "pl"
 
 # --- Pelican Paths and Settings ---
 PATH = "content"
-# THEME = "themes/core"
-# THEME_STATIC_DIR = "theme"
+THEME = "themes/core"
+THEME_STATIC_DIR = "theme"
 DEFAULT_PAGINATION = False
 DELETE_OUTPUT_DIRECTORY = True
 STATIC_PATHS = ["images", "extra/CNAME"]

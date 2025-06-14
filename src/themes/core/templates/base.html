@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ SITENAME }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white>
+    {% include "partial/navigation.html" %}
+    <main role="main">
+        <div class="container mx-auto">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+</body>
+
+</html>
