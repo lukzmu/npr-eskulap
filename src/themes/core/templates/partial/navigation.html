@@ -44,7 +44,7 @@
         <div class="hidden lg:flex lg:gap-x-12">
 
             {% for category, category_pages in page_categories.items() %}
-                <div class="relative">
+                <div class="relative group">
                     <button type="button"
                         class="inline-flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
                         aria-expanded="false">
@@ -55,11 +55,13 @@
                                 clip-rule="evenodd" />
                         </svg>
                     </button>
-                    <div class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
+
+                    <!-- DROPDOWN: shown directly below button, no margin gap -->
+                    <div class="absolute left-1/2 z-10 top-full hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4 pt-4">
                         <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                             <div class="p-4">
                                 {% for page in category_pages %}
-                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50" >
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
                                         <div>
                                             <a href="{{ SITEURL }}/{{ page.url }}" class="font-semibold text-gray-900">
                                                 {{ page.title }}
@@ -75,7 +77,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             {% endfor %}
 
@@ -83,6 +85,7 @@
                 <a href="{{ SITEURL }}/{{ page.url }}" class="text-md font-semibold leading-6 text-gray-900">{{ page.title }}</a>
             {% endfor %}
         </div>
+
     </nav>
 
     <!-- Mobile menu, show/hide based on menu open state. -->
