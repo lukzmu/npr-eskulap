@@ -1,5 +1,4 @@
 Title: Kontakt
-Category:
-Icon:
+Category: Ogólne
 
 Strona w budowie 👷🏻‍♂️.
