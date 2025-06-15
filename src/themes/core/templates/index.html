@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% set is_index = True %}
 {% block content %}
     {% include "partial/welcome.html" %}
+    {% include "partial/stats.html" %}
 {% endblock %}

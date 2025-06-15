@@ -25,7 +25,9 @@
                     <path d="M14 14V9h4v5h5v4h-5v5h-4v-5H9v-4h5z" fill="#FFF"></path>
                 </g>
             </svg>
-            <span class="text-lg mt-0.5 ml-6 font-bold">NPR Eskulap w Biskupcu</span>
+            {% if not is_index %}
+                <span class="text-lg mt-0.5 ml-6 font-bold">NPR Eskulap w Biskupcu</span>
+            {% endif %}
         </a>
 
         <!-- Hamburger Icon -->
