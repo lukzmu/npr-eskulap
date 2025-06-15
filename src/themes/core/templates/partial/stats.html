@@ -1,0 +1,16 @@
+<div class="mx-auto max-w-7xl justify-between p-6 lg:px-8 -mt-32">
+    <div class="bg-gray-200 rounded-lg overflow-hidden">
+        <div>
+            <div class="grid grid-cols-1 gap-px bg-white/5 sm:grid-cols-2 lg:grid-cols-4">
+                {% for highlight in SITE_DATA.home.highlights %}
+                <div class="bg-blue-600 px-4 py-6 sm:px-6 lg:px-8">
+                    <p class="text-sm font-medium leading-6 text-gray-200">{{ highlight.label }}</p>
+                    <p class="mt-2 flex items-baseline gap-x-2">
+                        <span class="text-4xl font-semibold tracking-tight text-white">{{ highlight.value }}</span>
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
