@@ -35,7 +35,7 @@
                         <p class="relative z-10 rounded-full bg-blue-600 px-3 mr-6 py-1.5 font-medium text-white text-xs">{{ article.category }}</p>
                         <a class="hover:underline" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
                         <span class="flex-1"></span>                        
-                        <time class="text-gray-500">{{ article.date.strftime("%Y.%m.%d") }}</time>
+                        <time class="text-gray-500">{{ article.date|format_date_localized }}</time>
                     </div>
                 </article>
             {% endfor %}

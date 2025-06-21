@@ -1,6 +1,8 @@
 import os
 from datetime import datetime
 
+from babel.dates import format_date
+
 from core.repositories import Repository
 
 # --- Site Data ---
@@ -9,6 +11,7 @@ AUTHOR = "Lukasz Zmudzinski"
 SITENAME = "Niepubliczna Przychodnia Rodzinna Eskulap w Biskupcu"
 TIMEZONE = "Europe/Warsaw"
 DEFAULT_LANG = "pl"
+LOCALE = "pl_PL.UTF-8"
 
 # --- Pelican Paths and Settings ---
 PATH = "content"
@@ -19,6 +22,11 @@ DELETE_OUTPUT_DIRECTORY = True
 STATIC_PATHS = ["images", "extra/CNAME"]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
+}
+
+# --- JINJA ---
+JINJA_FILTERS = {
+    "format_date_localized": lambda date: format_date(date=date, format="long", locale=LOCALE),
 }
 
 # --- Feed Generation ---

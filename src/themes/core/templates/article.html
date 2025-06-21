@@ -35,7 +35,7 @@
         </nav>
         <div class="mx-auto max-w-4xl lg:mx-0 mt-20">
             <h2 class="mt-2 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">{{ article.title }}</h2>
-            <p class="mt-4 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Wpis z dnia: {{ article.date.strftime("%Y.%m.%d") }}.</p>
+            <p class="mt-4 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Wpis z dnia: {{ article.date|format_date_localized }}</p>
         </div>
         <div class="prose max-w-7xl mx-auto mt-20 p-8 bg-white rounded-3xl text-justify text-lg">
             {{ article.content }}
