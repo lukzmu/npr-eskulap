@@ -2,15 +2,17 @@
 {% set general_pages = [] %}
 
 {% for page in pages %}
-    {% set category = page.metadata.category %}
+    {% if page.navigation == "True" %}
+        {% set category = page.metadata.category %}
 
-    {% if category == "Ogólne" %}
-        {% set _ = general_pages.append(page) %}
-    {% else %}
-        {% if category not in page_categories %}
-            {% set _ = page_categories.update({category: [page]}) %}
+        {% if category == "Ogólne" %}
+            {% set _ = general_pages.append(page) %}
         {% else %}
-            {% set _ = page_categories[category].append(page) %}
+            {% if category not in page_categories %}
+                {% set _ = page_categories.update({category: [page]}) %}
+            {% else %}
+                {% set _ = page_categories[category].append(page) %}
+            {% endif %}
         {% endif %}
     {% endif %}
 {% endfor %}

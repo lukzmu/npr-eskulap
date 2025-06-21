@@ -1,6 +1,7 @@
 Title: Karta praw pacjenta
 Summary: Akty prawne dotyczące praw pacjenta
 Category: Strefa Pacjenta
+Navigation: True
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim felis vel felis commodo, nec efficitur mauris malesuada. Integer elementum malesuada orci et tristique. Nulla felis lacus, hendrerit in faucibus eu, rutrum et dolor. Vivamus pulvinar diam eu velit hendrerit pretium. Donec dignissim neque ex, egestas viverra velit convallis sed. Pellentesque tempus ut felis vitae efficitur. Praesent vel odio eleifend, finibus ligula nec, fringilla ligula. Curabitur rutrum orci et nisl egestas, at congue metus congue. Phasellus malesuada laoreet neque a ullamcorper. Sed vitae euismod libero. Quisque ullamcorper lacinia condimentum. Proin mollis risus vitae lacus ullamcorper consectetur. Quisque quis ante lectus. Sed nunc metus, venenatis eget accumsan quis, ultrices quis eros. Ut efficitur interdum rhoncus.
 

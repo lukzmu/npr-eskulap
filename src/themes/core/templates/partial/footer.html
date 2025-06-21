@@ -1,12 +1,14 @@
 {% set page_categories = {} %}
 
 {% for page in pages %}
-    {% set category = page.metadata.category %}
+    {% if page.navigation == "True" %}
+        {% set category = page.metadata.category %}
 
-    {% if category not in page_categories %}
-        {% set _ = page_categories.update({category: [page]}) %}
-    {% else %}
-        {% set _ = page_categories[category].append(page) %}
+        {% if category not in page_categories %}
+            {% set _ = page_categories.update({category: [page]}) %}
+        {% else %}
+            {% set _ = page_categories[category].append(page) %}
+        {% endif %}
     {% endif %}
 {% endfor %}
 
@@ -35,7 +37,7 @@
                 <h3 class="text-xl font-semibold text-gray-200">Prawa Autorskie</h3>
                 <p class="mt-2 text-white">&copy; {{SITE_DATA.year}} Niepubliczna Przychodnia Rodzinna Eskulap</p>
                 <h3 class="text-xl font-semibold text-gray-200 pt-10">Wykonanie</h3>
-                <p class="mt-2 text-white">Wykonane przez <a class="hover:underline font-bold" href="https://inperium.eu">INPERIUM</a>.</p>
+                <p class="mt-2 text-white">Wykonane przez <a class="hover:underline font-bold" href="https://inperium.eu" target="_blank">INPERIUM</a>.</p>
             </div>
         </div>
     </div>
