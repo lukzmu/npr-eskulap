@@ -1,0 +1,40 @@
+<div class="bg-white rounded-2xl py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto lg:mx-0 text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Kontakt</h2>
+            <p class="mt-4 text-lg leading-8 text-gray-600">Dane teleadresowe Przychodni.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 mt-10">
+            <div class="mt-6 border-t border-gray-100">
+                <dl class="divide-y divide-gray-100">
+                    <div class="bg-gray-50 px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">
+                        <dt class="text-sm/6 font-medium text-gray-900">Telefon</dt>
+                        <dd class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+                            {% for phone in SITE_DATA.contact.phones %}
+                                {{ phone }} <br/>
+                            {% endfor %}
+                        </dd>
+                    </div>
+                    <div class="bg-white px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">
+                        <dt class="text-sm/6 font-medium text-gray-900">Email</dt>
+                        <dd class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+                            {% for email in SITE_DATA.contact.emails %}
+                                {{ email }} <br/>
+                            {% endfor %}
+                        </dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-3">
+                        <dt class="text-sm/6 font-medium text-gray-900">Adres</dt>
+                        <dd class="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+                            {{ SITE_DATA.contact.address.street }} <br/>
+                            {{ SITE_DATA.contact.address.po_code }} {{ SITE_DATA.contact.address.city }}
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+            <div>
+                <iframe class="w-full h-290 aspect-video my-6" src="https://www.openstreetmap.org/export/embed.html?bbox=20.95437437295914%2C53.865341577751046%2C20.957576930522922%2C53.86680933103222&amp;layer=cyclemap&amp;marker=53.866075460828874%2C20.955975651741028"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
