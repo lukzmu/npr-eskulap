@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niepubliczna Przychodnia Rodzinna Eskulap w Biskupcu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+</head>
+
+<body class="bg-gray-50 flex flex-col h-screen">    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="bg-gray-50 sticky top-0 z-50 border-b">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <!-- Navigation Logo -->
+        <a href="https://lukzmu.github.io/npr-eskulap" class="-m-1.5 p-1.5 flex">
+            <svg class="h-8 w-auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                    <rect fill="#2563eb" width="32" height="32" rx="3"></rect>
+                    <path d="M14 14V9h4v5h5v4h-5v5h-4v-5H9v-4h5z" fill="#FFF"></path>
+                </g>
+            </svg>
+            <span class="text-lg mt-0.5 ml-6 font-bold">NPR Eskulap w Biskupcu</span>
+        </a>
+
+        <!-- Hamburger Icon -->
+        <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu -->
+        <div class="hidden lg:flex lg:gap-x-12">
+
+                <div class="relative group">
+                    <button type="button"
+                        class="inline-flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+                        aria-expanded="false">
+                        <span>Programy profilaktyczne</span>
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <!-- DROPDOWN: shown directly below button, no margin gap -->
+                    <div class="absolute left-1/2 z-10 top-full hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4 pt-4">
+                        <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                            <div class="p-4">
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <div>
+                                            <a href="https://lukzmu.github.io/npr-eskulap/pages/chuk.html" class="font-semibold text-gray-900">
+                                                CHUK
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600"><p>Profilaktyka chorób układu krążenia</p></p>
+                                        </div>
+                                    </div>
+                                        <div class="border-b border-gray-200"></div>
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <div>
+                                            <a href="https://lukzmu.github.io/npr-eskulap/pages/moje-zdrowie.html" class="font-semibold text-gray-900">
+                                                Moje Zdrowie
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600"><p>Dbaj o siebie z programem Moje Zdrowie</p></p>
+                                        </div>
+                                    </div>
+                                        <div class="border-b border-gray-200"></div>
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <div>
+                                            <a href="https://lukzmu.github.io/npr-eskulap/pages/opieka-koordynowana.html" class="font-semibold text-gray-900">
+                                                Opieka koordynowana
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600"><p>Możliwości diagnostyczne i leczenia chorób przewlekłych</p></p>
+                                        </div>
+                                    </div>
+                                        <div class="border-b border-gray-200"></div>
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <div>
+                                            <a href="https://lukzmu.github.io/npr-eskulap/pages/szczepienia-profilaktyczne.html" class="font-semibold text-gray-900">
+                                                Szczepienia profilaktyczne
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600"><p>Skuteczna ochrona przed chorobami</p></p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <button type="button"
+                        class="inline-flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+                        aria-expanded="false">
+                        <span>Przychodnia</span>
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <!-- DROPDOWN: shown directly below button, no margin gap -->
+                    <div class="absolute left-1/2 z-10 top-full hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4 pt-4">
+                        <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                            <div class="p-4">
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <div>
+                                            <a href="https://lukzmu.github.io/npr-eskulap/pages/personel-poradni.html" class="font-semibold text-gray-900">
+                                                Personel Poradni
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600"><p>Lekarze, pielęgniarki oraz administracja</p></p>
+                                        </div>
+                                    </div>
+                                        <div class="border-b border-gray-200"></div>
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <div>
+                                            <a href="https://lukzmu.github.io/npr-eskulap/pages/zakres-uslug-medycznych.html" class="font-semibold text-gray-900">
+                                                Zakres usług medycznych
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600"><p>Usługi medyczne, zabiegi, konsultacje</p></p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="relative group">
+                    <button type="button"
+                        class="inline-flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900"
+                        aria-expanded="false">
+                        <span>Strefa Pacjenta</span>
+                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <!-- DROPDOWN: shown directly below button, no margin gap -->
+                    <div class="absolute left-1/2 z-10 top-full hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4 pt-4">
+                        <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                            <div class="p-4">
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <div>
+                                            <a href="https://lukzmu.github.io/npr-eskulap/pages/prawa-pacjenta.html" class="font-semibold text-gray-900">
+                                                Prawa pacjenta
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600"><p>Akty prawne dotyczące praw pacjenta</p></p>
+                                        </div>
+                                    </div>
+                                        <div class="border-b border-gray-200"></div>
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <div>
+                                            <a href="https://lukzmu.github.io/npr-eskulap/pages/punkt-pobran-krwi.html" class="font-semibold text-gray-900">
+                                                Punkt pobrań krwi
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600"><p>Informacje o punkcie pobrań krwi</p></p>
+                                        </div>
+                                    </div>
+                                        <div class="border-b border-gray-200"></div>
+                                    <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                                        <div>
+                                            <a href="https://lukzmu.github.io/npr-eskulap/pages/rodo.html" class="font-semibold text-gray-900">
+                                                RODO
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600"><p>Ogólne rozporządzenie o ochronie danych</p></p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="https://lukzmu.github.io/npr-eskulap/pages/aos.html" class="text-md font-semibold leading-6 text-gray-900">AOS</a>
+                <a href="https://lukzmu.github.io/npr-eskulap/pages/kontakt.html" class="text-md font-semibold leading-6 text-gray-900">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <!-- <div class="lg:hidden" role="dialog" aria-modal="true">
+        
+        <div class="fixed inset-0 z-10"></div>
+        <div
+            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">NPR Eskulap</span>
+                    <svg class="h-8 w-auto" viewBox="0 0 158 32" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <rect fill="#2E85FF" width="32" height="32" rx="3"></rect>
+                            <path d="M14 14V9h4v5h5v4h-5v5h-4v-5H9v-4h5z" fill="#FFF"></path>
+                        </g>
+                    </svg>
+                </a>
+                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                        <a href="#"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Przychodnia</a>
+                        <a href="#"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Strefa
+                            Pacjenta</a>
+                        <a href="#"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</header>    <main role="main" class="flex-grow">
+        <div class="container mx-auto">
+
+    <div class="mx-auto mb-20 max-w-7xl pl-6 pr-6 lg:px-8">
+        <nav class="flex mt-6" aria-label="Breadcrumb">
+            <ol role="list" class="flex items-center space-x-4">
+                <li>
+                <div>
+                    <a href="https://lukzmu.github.io/npr-eskulap" class="text-gray-400 hover:text-gray-500">
+                    <svg class="size-5 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="sr-only">Home</span>
+                    </a>
+                </div>
+                </li>
+                <li>
+                <div class="flex items-center">
+                    <svg class="size-5 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Przychodnia</p>
+                </div>
+                </li>
+                <li>
+                <div class="flex items-center">
+                    <svg class="size-5 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                    <a href="https://lukzmu.github.io/npr-eskulap/pages/grant-feniks.html" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700" aria-current="page">Grant FEnIKS</a>
+                </div>
+                </li>
+            </ol>
+        </nav>
+        <div class="mx-auto max-w-4xl lg:mx-0 mt-20">
+            <h2 class="mt-2 text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Grant FEnIKS</h2>
+            <p class="mt-4 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Umowa Grantowa: 014OW/505/I/2024.</p>
+        </div>
+        <div class="prose max-w-7xl mx-auto mt-20 p-8 bg-white rounded-3xl text-justify text-lg">
+            <p><img alt="Logotyp FEnIKS" src="/theme/images/feniks.png"></p>
+<p>Link do oficjalnej strony projektu - <a href="https://www.feniks.gov.pl/">FEnIKS</a>.</p>
+<h2>Tytuł Projektu</h2>
+<p>Wsparcie podstawowej opieki zdrowotnej (POZ)</p>
+<h2>Zadania i działania realizowane w projekcie</h2>
+<ul>
+<li>Strategia rozwoju poprzez wzrost jakości, dostępności i przyjazności oraz skuteczne zapobieganie chorobom i pogorszeniu stanu zdrowia min. przez rozwój opieki domowej i rozwiązań telemedycznych zgodnie z zapotrzebowaniem zdrowotnym populacji;</li>
+<li>Realizacja zadań ze szczególnym uwzględnieniem profilaktyki zdrowotnej, wzrostu roli POZ nad osobami przewlekle chorymi, niwelowania różnic w dostępności do świadczeń;</li>
+<li>Realizacja przez wdrożenie proaktywnej opieki nad pacjentami POZ, wzrost
+częstotliwości zlecenia badań przez lekarzy POZ, wzmocnienie edukacji zdrowotnej i dalszy rozwój opieki koordynowanej;</li>
+<li>Zapewnienie swobodnego dostępu do usług medycznych poprzez poprawę dostępności
+cyfrowej, informacyjnej i komunikacyjnej na rzecz osób ze szczególnymi potrzebami - w trakcie trwania grantu przeszkolenie 1 osoby personelu w zakresie języka migowego;</li>
+</ul>
+<h2>Grupy docelowe</h2>
+<ul>
+<li>Wszystkie grupy dziedzinowe.</li>
+</ul>
+<h2>Cel główny</h2>
+<p>Doposażenie placówki w sprzęt diagnostyczny min. analizator krwi wielofunkcyjny,
+cykloergometr, zakup oprogramowania i rozwój sieci komputerowej dedykowany min.
+rozwojowi opieki koordynowanej, poszerzenie świadczeń zdrowotnych w zakresie
+diagnostyki i leczenia min. waga z analizatorem masy ciała, działania i doposażenie placówki dedykowane pacjentom z terenów wiejskich, niezurbanizowanych min. usg przenośne, urządzenia do rozwoju telemedycyny i e-medycyny, w tym modernizacja strony www.</p>
+<h2>Cele projektu</h2>
+<ul>
+<li>Zwiększenie dostępności do świadczeń POZ działających na obszarach Stabiej
+rozwiniętych gospodarczo i terenow wiejskich oraz obszarow zagrozonych
+utratą/ograniczeniem dostępu do POZ, poprzez udzielenie odpowiedniego wsparcia
+w zabezpieczeniu tych podmiotów w niezbędny sprzęt, w tym sprzęt diagnostyczny;</li>
+<li>Wsparcie w zakresie infrastruktury niezbędnej do prowadzenia działalnosci
+leczniczej, ktorej celem będzie dostosowanie i poprawa tunkcjonalnosci pomieszczen do poszerzanych świadczeń zdrowotnych w zakresie profilaktyki, diagnostyki i leczenia na poziomie POZ w kontekscie rozwoju opieki koordynowanej;</li>
+<li>Zwiększenię dostępności i efektywności systemu opieki zdrowotnej w zakresie
+niwelowania różnic regionalnych w dostępności do ustug zdrowotnych.</li>
+</ul>
+<h2>Rezultaty projektu</h2>
+<ul>
+<li>Spełnienie założonych celów projektowych.</li>
+</ul>
+<h2>Wartość projektu</h2>
+<p>300 000 PLN</p>
+<h2>Wysokość wkładu Funduszy Europejskich</h2>
+<p>300 000 PLN</p>
+        </div>
+    </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-blue-600 text-white">
+    <div class="mx-auto max-w-7xl px-6 pt-20 pb-20 sm:pt-24 sm:pb-24 lg:px-8 lg:pt-32">
+        <div class="xl:grid xl:grid-cols-4 xl:gap-8">
+            <div class="grid gap-8 xl:col-span-3">
+                <div class="md:grid md:grid-cols-4 md:gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-200">Ogólne</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/aos.html" class="text-white hover:underline">AOS</a>
+                            </li>
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/kontakt.html" class="text-white hover:underline">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-200">Programy profilaktyczne</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/chuk.html" class="text-white hover:underline">CHUK</a>
+                            </li>
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/moje-zdrowie.html" class="text-white hover:underline">Moje Zdrowie</a>
+                            </li>
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/opieka-koordynowana.html" class="text-white hover:underline">Opieka koordynowana</a>
+                            </li>
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/szczepienia-profilaktyczne.html" class="text-white hover:underline">Szczepienia profilaktyczne</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-200">Przychodnia</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/personel-poradni.html" class="text-white hover:underline">Personel Poradni</a>
+                            </li>
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/zakres-uslug-medycznych.html" class="text-white hover:underline">Zakres usług medycznych</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-200">Strefa Pacjenta</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/prawa-pacjenta.html" class="text-white hover:underline">Prawa pacjenta</a>
+                            </li>
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/punkt-pobran-krwi.html" class="text-white hover:underline">Punkt pobrań krwi</a>
+                            </li>
+                            <li>
+                                <a href="https://lukzmu.github.io/npr-eskulap/pages/rodo.html" class="text-white hover:underline">RODO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 xl:mt-0">
+                <h3 class="text-xl font-semibold text-gray-200">Prawa Autorskie</h3>
+                <p class="mt-2 text-white">&copy; 2025 NPR Eskulap</p>
+                <h3 class="text-xl font-semibold text-gray-200 pt-10">Wykonanie</h3>
+                <p class="mt-2 text-white">Wykonane przez <a class="hover:underline font-bold" href="https://inperium.eu" target="_blank">INPERIUM</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer></body>
+
+</html>
