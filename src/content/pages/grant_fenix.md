@@ -3,7 +3,7 @@ Summary: Umowa Grantowa: 014OW/505/I/2024
 Category: Przychodnia
 Navigation: False
 
-![Logotyp FEnIKS](/theme/images/feniks.png)
+![Logotyp FEnIKS]({attach}../images/feniks.png)
 
 Link do oficjalnej strony projektu - [FEnIKS](https://www.feniks.gov.pl/).
 
